@@ -11,6 +11,6 @@
 ___
 
 ## Запуск приложения:
-_php composer install_
+composer install_
 
 _php index.php_
