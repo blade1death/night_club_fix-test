@@ -1,0 +1,22 @@
+{
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "dagbdul",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Utils\\": "src/utils",
+      "Entity\\": "src/entity",
+      "Behavior\\": "src/behavior",
+      "App\\": "src/app"
+    }
+  }
+}
