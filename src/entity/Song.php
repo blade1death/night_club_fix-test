@@ -1,9 +1,9 @@
 <?php
 
-namespace Entity\Music;
+namespace Entity;
 
 
-class Music
+class Song
 {
     protected Genre $genre;
     protected string $name;

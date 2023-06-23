@@ -7,9 +7,9 @@ use Behavior\Hiphop;
 use Behavior\House;
 use Behavior\Pop as PopDance;
 use Behavior\RAndB as RAndBDance;
-use Entity\Music\Electrohouse;
-use Entity\Music\Pop;
-use Entity\Music\RAndB;
+use Entity\Electrohouse;
+use Entity\Pop;
+use Entity\RAndB;
 
 class DanceConfig
 {

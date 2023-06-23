@@ -1,6 +1,6 @@
 <?php
 
-namespace Entity\Music;
+namespace Entity;
 
 class Pop extends Genre
 {

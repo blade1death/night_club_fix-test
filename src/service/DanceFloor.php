@@ -2,7 +2,7 @@
 
 namespace Service;
 
-use Entity\Music\Music;
+use Entity\Song;
 use SplObjectStorage;
 use SplObserver;
 use SplSubject;
@@ -11,7 +11,7 @@ class DanceFloor implements SplSubject
 {
     private SplObjectStorage $observers;
     private SplObjectStorage $musicList;
-    private Music $currentMusic;
+    private Song $currentMusic;
 
     /**
      * @param SplObjectStorage $nightClubVisitors
@@ -23,17 +23,17 @@ class DanceFloor implements SplSubject
         $this->musicList = $musicList;
     }
 
-    public function attach(SplObserver $observer)
+    public function attach(SplObserver $observer):void
     {
         $this->observers->attach($observer);
     }
 
-    public function detach(SplObserver $observer)
+    public function detach(SplObserver $observer):void
     {
         $this->observers->detach($observer);
     }
 
-    public function notify()
+    public function notify():void
     {
         /** @var SplObserver $observer */
         foreach ($this->observers as $observer) {
@@ -42,20 +42,20 @@ class DanceFloor implements SplSubject
     }
 
     /**
-     * @return Music
+     * @return Song
      */
-    public function getCurrentMusic(): Music
+    public function getCurrentMusic(): Song
     {
         return $this->currentMusic;
     }
 
     public function startParty()
     {
-        /** @var Music $music */
+        /** @var Song $music */
         foreach ($this->musicList as $music) {
             $this->currentMusic = $music;
-            echo 'Now playing: ' . $this->currentMusic->getName()
-                . ' music genre: ' . $this->currentMusic->getGenre()->getName()
+            echo 'Сейчас играет: ' . $this->currentMusic->getName()
+                . 'музыкальный жанр: ' . $this->currentMusic->getGenre()->getName()
                 . PHP_EOL;
             $this->notify();
         }

@@ -1,14 +1,14 @@
 {
   "head": [
-    "forward_backward"
+    "головой вперед-назад"
   ],
   "body": [
-    "forward_backward"
+    "покачивание телом вперед назад"
   ],
   "hands": [
-    "bent_elbows"
+    "руки согнуты в локтях"
   ],
   "legs": [
-    "half_squat"
+    "ноги в полуприседе"
   ]
 }

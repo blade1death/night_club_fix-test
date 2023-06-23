@@ -5,18 +5,19 @@ use Behavior\Hiphop;
 use Behavior\House;
 use Behavior\Pop as PopDance;
 use Entity\Dancer;
-use Entity\Music\Electrohouse;
-use Entity\Music\Music;
-use Entity\Music\Pop;
-use Entity\Music\RAndB;
+use Entity\Electrohouse;
+use Entity\Pop;
+use Entity\RAndB;
+use Entity\Song;
+
 
 require_once 'vendor/autoload.php';
 
 $trackList = new SplObjectStorage();
 
-$randbTrack = new Music('Some R&B track', new RAndB());
-$electroHouseTrack = new Music('Some Electrohouse track', new Electrohouse());
-$popTrack = new Music('Some pop track', new Pop());
+$randbTrack = new Song('Some R&B track', new RAndB());
+$electroHouseTrack = new Song('Some Electrohouse track', new Electrohouse());
+$popTrack = new Song('Some pop track', new Pop());
 
 $trackList->attach($randbTrack);
 $trackList->attach($electroHouseTrack);

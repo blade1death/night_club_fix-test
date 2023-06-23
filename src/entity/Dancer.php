@@ -33,7 +33,7 @@ class Dancer implements SplObserver
         }
     }
 
-    public function update(SplSubject $subject)
+    public function update(SplSubject $subject):void
     {
         /** @var DanceFloor $subject */
         $currentMusicGenre = $subject->getCurrentMusic()->getGenre();
