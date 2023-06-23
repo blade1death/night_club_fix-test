@@ -35,7 +35,7 @@ class DanceConfig
         $map[RAndB::class] = [Hiphop::class, RAndBDance::class];
         $map[Electrohouse::class] = [ElectroDance::class, House::class];
         $map[Pop::class] = [PopDance::class];
-        $map[DrinkAction::class] = [DrinkAction::class];
+
         return $map;
     }
 }

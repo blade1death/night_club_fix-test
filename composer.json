@@ -4,8 +4,8 @@
   "license": "proprietary",
   "authors": [
     {
-      "name": "blade1death",
-      "email": "dragonking.12235@mail.ru"
+      "name": "dagbdul",
+      "email": "email@example.com"
     }
   ],
   "require": {
@@ -16,7 +16,7 @@
       "Utils\\": "src/utils",
       "Entity\\": "src/entity",
       "Behavior\\": "src/behavior",
-      "App\\": "src/app"
+      "Service\\": "src/service"
     }
   }
 }

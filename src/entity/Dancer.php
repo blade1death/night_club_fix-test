@@ -2,7 +2,7 @@
 
 namespace Entity;
 
-use App\DanceFloor;
+use Service\DanceFloor;
 use Behavior\DanceAction;
 use Behavior\DrinkAction;
 use Behavior\NightClubAction;
@@ -33,7 +33,7 @@ class Dancer implements SplObserver
         }
     }
 
-    public function update(SplSubject $subject):void
+    public function update(SplSubject $subject)
     {
         /** @var DanceFloor $subject */
         $currentMusicGenre = $subject->getCurrentMusic()->getGenre();

@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Service;
 
 use Entity\Music\Music;
 use SplObjectStorage;
@@ -23,17 +23,17 @@ class DanceFloor implements SplSubject
         $this->musicList = $musicList;
     }
 
-    public function attach(SplObserver $observer):void
+    public function attach(SplObserver $observer)
     {
         $this->observers->attach($observer);
     }
 
-    public function detach(SplObserver $observer):void
+    public function detach(SplObserver $observer)
     {
         $this->observers->detach($observer);
     }
 
-    public function notify():void
+    public function notify()
     {
         /** @var SplObserver $observer */
         foreach ($this->observers as $observer) {
@@ -54,8 +54,8 @@ class DanceFloor implements SplSubject
         /** @var Music $music */
         foreach ($this->musicList as $music) {
             $this->currentMusic = $music;
-            echo 'Сейчас играет: ' . $this->currentMusic->getName()
-                . ' музыкальный жанр: ' . $this->currentMusic->getGenre()->getName()
+            echo 'Now playing: ' . $this->currentMusic->getName()
+                . ' music genre: ' . $this->currentMusic->getGenre()->getName()
                 . PHP_EOL;
             $this->notify();
         }

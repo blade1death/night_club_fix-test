@@ -24,7 +24,7 @@ abstract class DanceAction implements NightClubAction
 
     public function getDancingInfo(): string
     {
-        return 'Танцует ' . $this->styleName . PHP_EOL . $this->getDanceDescription();
+        return 'Dancing ' . $this->styleName . PHP_EOL . $this->getDanceDescription();
     }
 
     public function whatDoing(): string

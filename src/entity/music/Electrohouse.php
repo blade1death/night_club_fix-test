@@ -4,5 +4,5 @@ namespace Entity\Music;
 
 class Electrohouse extends Genre
 {
-    protected string $name = 'Электрохаус';
+    protected string $name = 'Electrohouse';
 }

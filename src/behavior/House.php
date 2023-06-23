@@ -4,5 +4,5 @@ namespace Behavior;
 
 class House extends DanceAction
 {
-    protected string $styleName = 'Хаус';
+    protected string $styleName = 'House';
 }

@@ -1,14 +1,14 @@
 {
   "head": [
-    "обычные движения"
+    "default_moves"
   ],
   "body": [
-    "обычные движения"
+    "default_moves"
   ],
   "hands": [
-    "обычные движения"
+    "default_moves"
   ],
   "legs": [
-    "обычные движения"
+    "default_moves"
   ]
 }

@@ -4,5 +4,5 @@ namespace Behavior;
 
 class ElectroDance extends DanceAction
 {
-    protected string $styleName = 'Электродэнс';
+    protected string $styleName = 'Electrodance';
 }
